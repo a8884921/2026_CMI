@@ -29,6 +29,21 @@ Layout inside a panel step:
   `style*.py` (typography and colour theme), `data*.py` / `publication_data.py`
   (input reading and validation).
 
+## CMI Explorer (Shiny application)
+
+`CMI_Explorer_shinyapp/` holds **CMI Explorer 2.0.0**, the interactive web application that computes the
+clonal malignancy index (CMI) and its grades from fixed model parameters, for three input types:
+
+| Mode | Input | Output |
+|---|---|---|
+| Single-cell | raw UMI counts of B cells (10x Matrix Market ZIP or CSV/TSV) | per-cell CMI and grade |
+| Spatial | spot table with deconvolution weights for Mal-1/2/3 | per-spot grade |
+| Bulk | gene × sample expression matrix | per-sample CMI-riskscore, high/low at the cohort median |
+
+Hosted instance: <https://yanchangjian2019.shinyapps.io/cmi-explorer/>. The app is self-contained
+(`app.R`, `R/`, `engine/`, `ref/`, `www/`); run it locally with `Rscript run_local.R`, and see
+`CMI_Explorer_shinyapp/README.md` for input formats and the result bundle. Research use only.
+
 ## Requirements
 
 - **R** (≥ 4.1): `readr`, `dplyr`, `ggplot2`, `patchwork`, `tidyr`, `grid`, `pROC`,

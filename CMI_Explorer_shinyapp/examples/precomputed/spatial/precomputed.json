@@ -1,0 +1,7 @@
+{
+  "app_version": "2.0.0",
+  "input": "examples/spatial/spot_weights_demo.csv",
+  "synthetic": true,
+  "computed_at": "2026-10-19T15:26:27+0000",
+  "seconds": 3.7
+}

@@ -1,0 +1,87 @@
+{
+  "run_at": "2026-10-20T01:15:39+0800",
+  "R": "R version 4.4.1 (2024-06-14)",
+  "single_cell_seconds": 2.3,
+  "checks": [
+    {
+      "check": "Example inputs identical to the v1.2.0 inputs",
+      "result": "PASS",
+      "detail": "SHA-256 of counts.csv, expression.csv, spatial bundle"
+    },
+    {
+      "check": "CMI grade cut points unchanged",
+      "result": "PASS",
+      "detail": "0.9755058 / 0.98926105 / 0.99619844"
+    },
+    {
+      "check": "Model assets match their manifest",
+      "result": "PASS",
+      "detail": "8 files, SHA-256"
+    },
+    {
+      "check": "Matrix Market ZIP and CSV give identical results",
+      "result": "PASS",
+      "detail": "96 cells, every column"
+    },
+    {
+      "check": "Results do not depend on chunk size",
+      "result": "PASS",
+      "detail": "chunks of 1,000/150 vs 7/5 cells"
+    },
+    {
+      "check": "Single cell: Ig_score equals v1.2.0",
+      "result": "PASS",
+      "detail": "max |diff| 5.6e-16 (tolerance 1e-12)"
+    },
+    {
+      "check": "Single cell: cnv_score equals v1.2.0",
+      "result": "PASS",
+      "detail": "max |diff| 5.6e-17 (tolerance 1e-12)"
+    },
+    {
+      "check": "Single cell: mtp_score equals v1.2.0",
+      "result": "PASS",
+      "detail": "max |diff| 3.9e-16 (tolerance 1e-12)"
+    },
+    {
+      "check": "Single cell: diff_score equals v1.2.0",
+      "result": "PASS",
+      "detail": "max |diff| 4.9e-17 (tolerance 1e-12)"
+    },
+    {
+      "check": "Single cell: prol_score equals v1.2.0",
+      "result": "PASS",
+      "detail": "max |diff| 4.9e-17 (tolerance 1e-12)"
+    },
+    {
+      "check": "Single cell: CMI equals v1.2.0 (H2O)",
+      "result": "PASS",
+      "detail": "max |diff| 7.2e-10 (tolerance 2e-9: H2O stores trees in single precision)"
+    },
+    {
+      "check": "Single cell: malignant calls equal v1.2.0",
+      "result": "PASS",
+      "detail": "threshold and Mal-1/2/3 assignment for all 96 cells"
+    },
+    {
+      "check": "Bulk: CMI-riskscore equals v1.2.0 (randomForestSRC)",
+      "result": "PASS",
+      "detail": "max |diff| 9.9e-14 over 24 samples (tolerance 1e-10)"
+    },
+    {
+      "check": "Bulk: pair coverage equals v1.2.0",
+      "result": "PASS",
+      "detail": "100% of 100 pairs"
+    },
+    {
+      "check": "Spatial grading is reproducible",
+      "result": "PASS",
+      "detail": "2171 spots"
+    },
+    {
+      "check": "Spatial: RCTD weights equal v1.2.0 (memory-patched spacexr)",
+      "result": "PASS",
+      "detail": "max |diff| 5e-16 over 36 spots (tolerance 1e-10)"
+    }
+  ]
+}

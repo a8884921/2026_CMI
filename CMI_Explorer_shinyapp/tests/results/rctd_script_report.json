@@ -1,0 +1,56 @@
+{
+  "run_at": "2026-10-20T01:11:47+0800",
+  "R": "R version 4.4.1 (2024-06-14)",
+  "checks": [
+    {
+      "check": "Cut points equal those of the engines",
+      "result": "PASS",
+      "detail": "CMI 0.9755057544904364 / 0.98926105 / 0.99619844"
+    },
+    {
+      "check": "States equal those of Single-cell CMI",
+      "result": "PASS",
+      "detail": "50,009 CMI values including every boundary"
+    },
+    {
+      "check": "Reference classes from labels and CMI",
+      "result": "PASS",
+      "detail": "below threshold left out (or relabeled); empty labels unused; Mal-1/2/3 and Malig_3 refused; normal-B class found"
+    },
+    {
+      "check": "Reference formats read identically",
+      "result": "PASS",
+      "detail": "10x folder = zip, csv, rds, seurat; RNA assay used when SCT is the default: TRUE; split layers refused: TRUE"
+    },
+    {
+      "check": "Spot coordinates read identically",
+      "result": "PASS",
+      "detail": "tissue_positions.csv = tissue_positions_list.csv = --coords"
+    },
+    {
+      "check": "Ambiguous references are refused",
+      "result": "PASS",
+      "detail": "duplicated barcodes; labeled cells missing from the counts (split Seurat layers); no Mal-3 class"
+    },
+    {
+      "check": "RCTD weights equal v1.2.0",
+      "result": "PASS",
+      "detail": "max |diff| 0 over 36 spots (tolerance 1e-10; 26 s, spacexr 2.2.1)"
+    },
+    {
+      "check": "Output accepted by Spatial CMI grades",
+      "result": "PASS",
+      "detail": "36 spots · 6 classes, including Mal-1, Mal-2 and Mal-3"
+    },
+    {
+      "check": "Cells below the threshold: script equals the local edition",
+      "result": "PASS",
+      "detail": "20 Mal-1 cells at CMI 0.96 left out by both; max |diff| 5e-16"
+    },
+    {
+      "check": "--below-threshold Mal-1 reproduces version 1.2.0",
+      "result": "PASS",
+      "detail": "the same 20 cells counted as Mal-1; max |diff| from the v1.2.0 weights 0"
+    }
+  ]
+}

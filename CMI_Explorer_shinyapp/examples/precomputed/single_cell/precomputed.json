@@ -1,0 +1,7 @@
+{
+  "app_version": "2.0.0",
+  "input": "examples/single_cell/simulated_b_cells.zip",
+  "synthetic": true,
+  "computed_at": "2026-10-19T15:26:23+0000",
+  "seconds": 14.1
+}

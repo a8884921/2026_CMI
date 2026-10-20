@@ -1,0 +1,38 @@
+{
+  "format": "cmi-explorer-assets",
+  "version": "2.0.0",
+  "assets": {
+    "ig_gbm.rds": {
+      "bytes": 13288,
+      "sha256": "139a74e2abf372b0322910325dc1c4ebd63b632e1dddb0d471fbd0fceb4b5e8a"
+    },
+    "mtp_gbm.rds": {
+      "bytes": 24624,
+      "sha256": "85ea9550c773c5589d76d233130b6bff4ec46ceaffddd1fda3291eced22278e3"
+    },
+    "cmi_gbm.rds": {
+      "bytes": 133448,
+      "sha256": "a14f7eb666ab4940f8a10242cf93fecc918b1a9258aaf16b343392320ac8585f"
+    },
+    "rsf_m014.rds": {
+      "bytes": 1866424,
+      "sha256": "57530f937d4d66867f73d3b602c1b06153fcdde467a6d0d8c3388d8c43a7512f"
+    },
+    "reo_pairs.csv": {
+      "bytes": 2631,
+      "sha256": "22db2bd2557ae5c2a7a000f5fe76b2893484177d198224a98a8892fffe0a388d"
+    },
+    "ccat_ppi.rds": {
+      "bytes": 173916,
+      "sha256": "97549169fb05af30ff565c3b3362dae6d5f9cbeca63c903584089192021dd47b"
+    },
+    "cnv_reference.rds": {
+      "bytes": 438864,
+      "sha256": "66564884d4a0dfa03b568a385e9ce67135acf5925ff50626aaa3fe3aa94f2ea0"
+    },
+    "annotation_snapshot.rds": {
+      "bytes": 562724,
+      "sha256": "9e73112d7387c5b4ce31b02ab798a5c013b50836536e35bb30c0ed354a967de7"
+    }
+  }
+}
